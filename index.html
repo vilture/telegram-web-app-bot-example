@@ -387,12 +387,12 @@
     <div class="columns">
         <ul>
             <li><a href="javascript:;" onclick="alert('Привет!');">Оповещение</a></li>
-            <li><a href="javascript:;" onclick="confirm('Уверены?');">Да</a></li>
+            <li><a href="javascript:;" onclick="confirm('Уверены?');">Подтверждение</a></li>
             <li><a href="javascript:;" onclick="prompt('Сколько тебе лет?');">Вопрос</a></li>
         </ul>
         <ul>
-            <li><a href="javascript:;" onclick="DemoApp.showAlert('Привет!');">Оповещние 2</a></li>
-            <li><a href="javascript:;" onclick="DemoApp.showConfirm('Уверены?');">Да</a></li>
+            <li><a href="javascript:;" onclick="DemoApp.showAlert('Привет!');">Оповещние(чистое)</a></li>
+            <li><a href="javascript:;" onclick="DemoApp.showConfirm('Уверены?');">Подтверждение(чистое)</a></li>
             <li><a href="javascript:;" onclick="DemoApp.requestWriteAccess();">запрос на доступ к записи</a></li>
             <li><a href="javascript:;" onclick="DemoApp.requestContact();">запрос контантов</a></li>
             <li><a href="javascript:;" onclick="DemoApp.showPopup();">показать всплывашку</a></li>
@@ -453,10 +453,10 @@
             const mainButton = Telegram.WebApp.MainButton;
             if (mainButton.isVisible) {
                 mainButton.hide();
-                el.innerHTML = 'Show Main Button';
+                el.innerHTML = 'Показать главную кнопку';
             } else {
                 mainButton.show();
-                el.innerHTML = 'Hide Main Button';
+                el.innerHTML = 'Скрыть главную кнопку';
             }
         },
 
